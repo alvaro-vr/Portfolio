@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     background-color: black;
@@ -8,7 +12,13 @@ body{
 .contenedor{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 2000px;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+img{
+    pointer-events: none;
 }
 
 .inicio{
@@ -19,7 +29,7 @@ body{
 .inicio #fondo {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 937px;
     animation: latido 5s linear infinite;
 }
 
@@ -44,18 +54,19 @@ body{
 .nombre{ 
     font-size: 100px;
     font-weight: bold;
+    width: 490px;
     position: absolute;
-    color: white;
-    font-family: 'IBM Plex Mono', monospace;
     transform: translatex(700px) translatey(400px);
 }
 
-.nombre a:hover{
+.nombre:hover{
     border-bottom: 2px white solid;
+    animation: borde 0.3s alternate forwards;
 }
 
 a:link{
     text-decoration: none;
+    color: white;
 }
 
 a:visited{
@@ -79,6 +90,28 @@ a:visited{
     border-left: 4px solid white;
     animation: scroll 2s reverse infinite;
 }
+
+.menu{
+    position: sticky;
+    color: white;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    height: 3%;
+    border-bottom: 3px solid grey;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contenido{
+}
+
+
+
+
+
+
 
 @keyframes latido {
     0%{opacity: 0.1}
@@ -105,4 +138,32 @@ a:visited{
     30%{height: 50px;}
     50%{margin-top: 30px; height: 20px;}
     100%{}
+}
+
+@keyframes borde {
+    0%{width: 0;}
+    100%{}
+}
+
+
+/*SCROLL BAR*/
+html::-webkit-scrollbar{
+    appearance: none;
+}
+html::-webkit-scrollbar:vertical {
+    width:7px;
+}
+html::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+    display: none;
+} 
+html::-webkit-scrollbar:horizontal {
+    height: 7px;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 60px;
+    border: 1px solid #f1f2f3;
+}
+html::-webkit-scrollbar-track {
+    border-radius: 10px;  
 }
