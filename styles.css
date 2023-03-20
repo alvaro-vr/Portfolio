@@ -28,7 +28,7 @@ img{
     background-color: black;
 }
 
-.inicio #fondo {
+#fondo {
     position: absolute;
     width: 100%;
     height: 937px;
@@ -133,7 +133,7 @@ a:visited{
 }
 
 .proyectos{
-    margin-top: 160px;
+    margin-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,9 +161,112 @@ a:visited{
     border-radius: 20%;
 }
 
+/*RESPONSIVE*/
+@media screen and (max-width: 1610px){
+    .inicio{
+        height: 837px;
+    }
+    #fondo{
+        display: none;
+    }
+    .raton{
+        transform: translatex(900px) translatey(600px);
+    }
+}
 
 
+@media screen and (max-width: 1400px){
+    #fondo{
+        display: none;
+    }
+    .raton{
+        transform: translatex(800px) translatey(500px);
+    }
+    .perfil{
+        width: 300px;
+        height: 300px;
+        transform: translatex(100px) translatey(250px);
+    }
+    .nombre{
+        transform: translatex(600px) translatey(300px);
+    }
+}
 
+@media screen and (max-width: 1200px){
+    .perfil{
+        width: 250px;
+        height: 250px;
+        border: 3px solid white;
+        transform: translatex(150px) translatey(250px);
+    }
+
+    .raton{
+        transform: translatex(640px) translatey(500px);
+    }
+    
+    .nombre{
+        width: 350px;
+        font-size: 70px;
+        transform: translatex(540px) translatey(300px);
+    }
+
+    .sobremi img{
+        margin-top: 120px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .proyectos div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .raton{
+        margin-left: 50%;
+        transform: translateX(-60px) translatey(100px);
+    }
+
+    .perfil{
+        transform: translatex(100px) translatey(370px);
+    }
+
+    .nombre{
+        transform: translatex(400px) translatey(450px);
+    }
+
+    .sobremi img{
+        display: none;
+    }
+
+    .sobremi div{
+        display: block;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .perfil{
+        margin-left: 50%;
+        transform: translateX(-130px) translatey(340px);
+    }
+
+    .nombre{
+        width: 250px;
+        font-size: 50px;
+        margin-left: 50%;
+        transform: translateX(-130px) translatey(600px);
+    }
+
+    .proyectos div{
+        width: 200px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+}
 
 
 /*ANIMACIONES*/
