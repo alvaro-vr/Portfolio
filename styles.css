@@ -6,15 +6,16 @@ html {
 
 body{
     margin: 0;
-    background-color: black;
+    background-color: rgb(26, 26, 26);
 }
 
 .contenedor{
     position: absolute;
     width: 100%;
-    height: 2000px;
+    height: 2500px;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
 }
 
 img{
@@ -24,6 +25,7 @@ img{
 .inicio{
     width: 100%;
     height: 937px;
+    background-color: black;
 }
 
 .inicio #fondo {
@@ -87,14 +89,14 @@ a:visited{
     margin-left: 47%;
     margin-top: 7%;
     border-radius: 10%;
-    border-left: 4px solid white;
+    border-left: 4px solid #ff0202c0;
     animation: scroll 2s reverse infinite;
 }
 
 .menu{
     position: sticky;
     color: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.87);
     top: 0;
     width: 100%;
     height: 3%;
@@ -102,9 +104,61 @@ a:visited{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-weight: bold;
+    font-size: 20px;
 }
 
-.contenido{
+.sobremi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.sobremi div{
+    width: 30%;
+    margin-left: 13%;
+    margin-top: 130px;
+}
+
+.sobremi img{
+    margin-left: 100px;
+    margin-right: 15%;
+
+}
+
+#titulo{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.proyectos{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid{
+    display: flex;
+}
+
+.grid div{
+    margin: 20px;
+    margin-top:40px;
+    width: 350px;
+    height: 400px;
+    border-radius: 20%;
+}
+
+.grid div:hover{
+    animation: proyect_animation 0.1s linear;
+}
+
+.grid img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
 }
 
 
@@ -112,7 +166,7 @@ a:visited{
 
 
 
-
+/*ANIMACIONES*/
 @keyframes latido {
     0%{opacity: 0.1}
     50%{opacity: 0.5}
@@ -145,8 +199,14 @@ a:visited{
     100%{}
 }
 
+@keyframes proyect_animation {
+    0%{}
+    70%{transform: rotate(5deg);}
+    100%{}
+}
 
-/*SCROLL BAR*/
+
+/*SCROLLBAR*/
 html::-webkit-scrollbar{
     appearance: none;
 }
@@ -160,9 +220,9 @@ html::-webkit-scrollbar:horizontal {
     height: 7px;
 }
 html::-webkit-scrollbar-thumb {
-    background-color: #797979;
+    background-color: #FF0202;
     border-radius: 60px;
-    border: 1px solid #f1f2f3;
+    border: 1px solid #f1f2f38e;
 }
 html::-webkit-scrollbar-track {
     border-radius: 10px;  
