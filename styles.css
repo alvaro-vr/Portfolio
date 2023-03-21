@@ -115,7 +115,6 @@ a:visited{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
 }
 
 .sobremi div{
@@ -135,8 +134,15 @@ a:visited{
     font-weight: bold;
 }
 
+.habilidades{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .proyectos{
-    margin-top: 140px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
