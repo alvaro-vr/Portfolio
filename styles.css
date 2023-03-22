@@ -111,8 +111,23 @@ a:visited{
     font-size: 20px;
 }
 
+.foto{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.foto img{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 0.5px;
+}
+
+
 .sobremi{
     width: 100%;
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
 }
@@ -126,7 +141,6 @@ a:visited{
 .sobremi img{
     margin-left: 100px;
     margin-right: 15%;
-
 }
 
 #titulo{
@@ -135,6 +149,7 @@ a:visited{
 }
 
 .habilidades{
+    margin: 100px 0 100px 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -142,7 +157,7 @@ a:visited{
 }
 
 .proyectos{
-    margin-top: 100px;
+    margin-top: 190px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,6 +173,7 @@ a:visited{
     width: 350px;
     height: 400px;
     border-radius: 20%;
+    box-shadow: 10px 5px 3px 5px rgba(255, 255, 255, 0.301);
 }
 
 .grid div:hover{
@@ -169,6 +185,20 @@ a:visited{
     height: 100%;
     border-radius: 20%;
 }
+
+.contacto{
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacto div{
+    width: 500px;
+    height: 400px;
+    border: 2px solid black;
+}
+
 
 /*RESPONSIVE*/
 @media screen and (max-width: 1400px){
@@ -247,6 +277,12 @@ a:visited{
     .proyectos div{
         width: 200px;
         height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .foto{
+        display: none;
     }
 }
 
