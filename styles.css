@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap');
 
-html {
+html{
     scroll-behavior: smooth;
 }
 
@@ -51,7 +51,7 @@ img{
     height: 100%;
     border-radius: 100%;
     transform: rotate(0deg);
-    animation: girar 15s alternate infinite;
+    animation: girar 15s forwards infinite;
 }
 
 .nombre{ 
@@ -103,12 +103,17 @@ a:visited{
     top: 0;
     width: 100%;
     height: 3%;
-    border-bottom: 3px solid grey;
+    padding:10px 0 10px 0  ;
+    border-bottom:2px solid grey;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-weight: bold;
     font-size: 20px;
+}
+
+.element-menu:hover{
+    border-bottom: 2px white solid;
 }
 
 .foto{
@@ -132,6 +137,7 @@ a:visited{
     justify-content: center;
 }
 
+
 .sobremi div{
     width: 30%;
     margin-left: 13%;
@@ -141,11 +147,6 @@ a:visited{
 .sobremi img{
     margin-left: 100px;
     margin-right: 15%;
-}
-
-#titulo{
-    font-size: 40px;
-    font-weight: bold;
 }
 
 .habilidades{
@@ -167,7 +168,7 @@ a:visited{
     display: flex;
 }
 
-.grid div{
+.grid a{
     margin: 20px;
     margin-top:40px;
     width: 350px;
@@ -176,8 +177,8 @@ a:visited{
     box-shadow: 10px 5px 3px 5px rgba(255, 255, 255, 0.301);
 }
 
-.grid div:hover{
-    animation: proyect_animation 0.1s linear;
+.grid a:hover{
+    animation: proyect_animation 0.7s forwards;
 }
 
 .grid img{
@@ -217,7 +218,6 @@ a:visited{
     background-color: black;
     height: 50px;
     width: auto;
-    border-radius:10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -369,14 +369,6 @@ a:visited{
     25%{transform: rotate(0deg);}
 }
 
-@keyframes scroll {
-    0%{}
-    20%{height: 50px;}
-    30%{height: 50px;}
-    50%{margin-top: 30px; height: 20px;}
-    100%{}
-}
-
 @keyframes borde {
     0%{width: 0;}
     100%{}
@@ -384,8 +376,7 @@ a:visited{
 
 @keyframes proyect_animation {
     0%{}
-    70%{transform: rotate(5deg);}
-    100%{}
+    100%{margin-top: +20px;}
 }
 
 
@@ -404,8 +395,7 @@ html::-webkit-scrollbar:horizontal {
 }
 html::-webkit-scrollbar-thumb {
     background-color: #FF0202;
-    border-radius: 60px;
-    border: 1px solid #f1f2f38e;
+    border-radius: 55px;
 }
 html::-webkit-scrollbar-track {
     border-radius: 10px;  
