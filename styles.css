@@ -110,6 +110,7 @@ a:visited{
     align-items: center;
     font-weight: bold;
     font-size: 20px;
+    backdrop-filter: blur(10px);
 }
 
 .element-menu:hover{
