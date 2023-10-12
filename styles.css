@@ -369,6 +369,14 @@ a:visited{
     25%{transform: rotate(0deg);}
 }
 
+@keyframes scroll {
+    0%{}
+    20%{height: 50px;}
+    30%{height: 50px;}
+    50%{margin-top: 30px; height: 20px;}
+    100%{}
+}
+
 @keyframes borde {
     0%{width: 0;}
     100%{}
