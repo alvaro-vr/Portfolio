@@ -1,5 +1,87 @@
-<script>
-    <!--
-    document.write(unescape("%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%20%20%3Cmeta%20http-equiv%3D%22X-UA-Compatible%22%20content%3D%22IE%3Dedge%22%3E%0A%20%20%20%20%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%20%20%3Ctitle%3EPortfolio%20-%20alvarovr%3C/title%3E%0A%3C/head%3E%0A%0A%3Clink%20rel%3D%22stylesheet%22%20href%3D%22styles.css%22%3E%0A%3Clink%20rel%3D%22shortcut%20icon%22%20href%3D%22imagenes/foto.jpg%22%20%3E%0A%0A%3Cbody%3E%0A%20%20%20%20%3Cdiv%20class%3D%22contenedor%22%3E%0A%20%20%20%20%20%20%20%20%3Ca%20name%3D%22inicio%22%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22inicio%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20id%3D%22fondo%22%20src%3D%22./imagenes/fondo.jpg%22%20alt%3D%22fondo%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22perfil%22%3E%3Cimg%20src%3D%22./imagenes/foto.jpg%22%20alt%3D%22foto%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22nombre%22%3E%3Ca%20href%3D%22https%3A//discordapp.com/users/594061100727926797%22%20target%3D%22_blank%22%3Ealvarovr%3C/a%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22raton%22%3E%3Cdiv%3E%3C/div%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22menu%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20class%3D%22foto%22%20href%3D%22%23inicio%22%3E%3Cimg%20class%3D%22menufoto%22%20src%3D%22./imagenes/foto.jpg%22%20alt%3D%22menu%22%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23sobremi%22%20class%3D%22element-menu%22%3ESobre%20Mi%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22proyect-menu%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23proyect%22%20class%3D%22element-menu%22%3EProyectos%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22contacto-menu%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22%23contacto%22%20class%3D%22element-menu%22%3EContacto%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20name%3D%22sobremi%22%3E%3C/a%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22contenido%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22sobremi%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%3ESobre%20Mi%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3ESoy%20Alvaro%2C%20tengo%2019%20a%F1os%20y%20estoy%20empezando%20en%20el%20mundo%20de%20la%20programaci%F3n.%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Actualmente%20estoy%20terminando%20de%20estudiar%20DAM%20%28un%20Grado%20Superior%29.%20Me%20especializo%20en%20el%20Back-End%20de%20las%20aplicaciones%20sobre%20todo%20aunque%20tambien%20se%20algo%20de%20Front-End%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22./imagenes/imagen1.png%22%20alt%3D%22programaci%F3n%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22habilidades%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch2%3EHabilidades%3C/h2%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cb%3EFront-End%3A%3C/b%3E%20HTML5%2890%25%29%2C%20CSS%2890%25%29%20%26%20DOM%20JavaScript%2820%25%29%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cb%3EBack-End%3A%3C/b%3E%20Java%2880%25%29%20%26%20Kotlin%2810%25%29%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cbr%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3E%3Cb%3EBBDD%3A%3C/b%3E%20MYSQL%2870%25%29%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20name%3D%22proyect%22%3E%3C/a%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22proyectos%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%3EProyectos%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22grid%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%3E%3Cimg%20src%3D%22./imagenes/interrogacion.jpg%22%20alt%3D%22imagen%22%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%3E%3Cimg%20src%3D%22./imagenes/interrogacion.jpg%22%20alt%3D%22imagen%22%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%3E%3Cimg%20src%3D%22./imagenes/interrogacion.jpg%22%20alt%3D%22imagen%22%3E%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//github.com/AlvaroVRa%22%20id%3D%22boton%22%3ERepositorios%20de%20GitHub%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%0A%20%20%20%20%20%20%20%20%3Ca%20name%3D%22contacto%22%3E%3C/a%3E%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22contacto%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20id%3D%22imagen%22%3E%3Cimg%20style%3D%22opacity%3A%200.9%3B%22%20src%3D%22./imagenes/contacto.png%22%20alt%3D%22%22%3E%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ch1%3EContacto%3C/h1%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cspan%3EPuedes%20contactar%20conmigo%20agregandome%20via%20discord%20o%20por%20correo%20electr%F3nico%3Cbr%3E%20al%20correo%20%3Cb%3Ealvarovillaresrodriguez@gmail.com%3C/b%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/span%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22botones%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22https%3A//discordapp.com/users/594061100727926797%22%20id%3D%22boton%22%3EPerfil%20de%20Discord%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Ca%20href%3D%22./archivos/alvarovr-contact.vcf%22%20download%3D%22alvarovr-contact%22%20id%3D%22boton%22%3EDescargar%20Correo%3C/a%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E%0A%0A%3C/body%3E%0A%3C/html%3E"));
-    //-->
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - alvarovr</title>
+</head>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="imagenes/foto.jpg" >
+
+<body>
+    <div class="contenedor">
+        <a name="inicio"></a>
+        <div class="inicio">
+            <img id="fondo" src="./imagenes/fondo.jpg" alt="fondo">
+            <div class="perfil"><img src="./imagenes/foto.jpg" alt="foto"></div>
+            <div class="nombre"><a href="https://www.linkedin.com/in/%C3%A1lvaro-villares-rodr%C3%ADguez-9853a0251/?trk=public-profile-join-page" target="_blank">alvarovr</a></div>
+            <div class="raton"><div></div></div>
+        </div>
+
+        <div class="menu">
+            <a class="foto" href="#inicio"><img class="menufoto" src="./imagenes/foto.jpg" alt="menu"></a>
+            <div>
+                <a href="#sobremi" class="element-menu">Sobre Mi</a>
+            </div>
+            <div class="proyect-menu">
+                <a href="#proyect" class="element-menu">Proyectos</a>
+            </div>
+            <div class="contacto-menu">
+                <a href="#contacto" class="element-menu">Contacto</a>
+            </div>
+        </div>
+
+        <a name="sobremi"></a>
+
+        <div class="contenido">
+            <div class="sobremi">
+                <div>
+                    <h1>Sobre Mi</h1>
+                    <span>Soy Alvaro, tengo 19 años y estoy empezando en el mundo de la programación.<br>
+                    Actualmente estoy terminando de estudiar DAM (un Grado Superior). Me especializo en el Back-End de las aplicaciones sobre todo aunque tambien se algo de Front-End</span>
+                </div>
+                <img src="./imagenes/imagen1.png" alt="programación">
+            </div>
+
+            <div class="habilidades">
+                <h2>Habilidades</h2>
+                <span><b>Front-End:</b> HTML5(90%), CSS(90%) & DOM JavaScript(20%)</span>
+                <br>
+                <span><b>Back-End:</b> Java(80%) & Kotlin(10%)</span>
+                <br>
+                <span><b>BBDD:</b> MYSQL(70%)</span>
+            </div>
+
+        <a name="proyect"></a>
+
+            <div class="proyectos">
+                <h1>Proyectos</h1>
+                <div class="grid">
+                    <a><img src="./imagenes/interrogacion.jpg" alt="imagen"></a>
+                    <a><img src="./imagenes/interrogacion.jpg" alt="imagen"></a>
+                    <a><img src="./imagenes/interrogacion.jpg" alt="imagen"></a>
+                </div>
+                <a href="https://github.com/alvaro-vr" id="boton">Repositorios de GitHub</a>
+            </div>
+
+        <a name="contacto"></a>
+
+            <div class="contacto">
+                <div id="imagen"><img style="opacity: 0.9;" src="./imagenes/contacto.png" alt=""></div>
+                <div>
+                    <h1>Contacto</h1>
+                    <span>Puedes contactar conmigo agregandome via discord o por correo electrónico<br> al correo <b>alvarovillaresrodriguez@gmail.com</b>
+                    </span>
+                    <div class="botones">
+                        <a href="https://www.linkedin.com/in/%C3%A1lvaro-villares-rodr%C3%ADguez-9853a0251/?trk=public-profile-join-page" id="boton">Perfil de Discord</a>
+                        <a href="./archivos/alvarovr-contact.vcf" download="alvarovr-contact" id="boton">Descargar Correo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
