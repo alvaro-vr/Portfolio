@@ -1,8 +1,13 @@
 {
   "profile": {
     "name": "Alvaro Villares",
-    "title": "Full Stack Developer",
+    "title": "Junior Back-end Developer",
+    "email": "alvarovillaresrodriguez@gmail.com",
     "linkedin": "https://linkedin.com/in/álvaro-villares-rodríguez-9853a0251",
     "github": "https://github.com/alvaro-vr"
+  },
+  "aboutme": {
+    "title": "Sobre mi",
+    "description": "Soy un desarrollador back-end con nociones en el front-end. Me gusta trabajar en equipo y aprender de mis compañeros de trabajo. Me encanta la tecnología, la programación y la creatividad."
   }
 }

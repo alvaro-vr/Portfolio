@@ -1,0 +1,29 @@
+<template>
+  <footer
+    id="footer"
+    class="flex justify-center mt-9 w-full border-t-2 bg-neutral-400 bg-opacity-20 border-neutral-700 px-10 py-5"
+  >
+    <p class="text-neutral-900">
+      {{ profile.email }} | ©2024 | Made with Vue.js |
+      <a :href="profile.linkedin" target="_blank">Linkedin</a> |
+      <a :href="profile.github" target="_blank">Github</a>
+    </p>
+  </footer>
+</template>
+
+<script setup>
+import { defineProps } from 'vue'
+
+defineProps({
+  profile: {
+    type: Object
+  }
+})
+</script>
+
+<style>
+footer > p > a {
+  color: blue !important;
+  text-decoration: underline;
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
   <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 256 256">
-    <a :href="data.profile.linkedin" target="_blank">
+    <a :href="linkedin" target="_blank">
       <g fill="currentColor">
         <path
           d="M224 40v176a8 8 0 0 1-8 8H40a8 8 0 0 1-8-8V40a8 8 0 0 1 8-8h176a8 8 0 0 1 8 8"
@@ -18,8 +18,8 @@
 import { defineProps } from 'vue'
 
 const props = defineProps({
-  data: {
-    type: Object
+  linkedin: {
+    type: String
   }
 })
 </script>
