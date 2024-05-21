@@ -1,9 +1,9 @@
 <template>
-  <div class="flex w-full h-full">
-    <SideBar />
+  <div class="flex flex-col items-center">
+    <Profile />
   </div>
 </template>
 
 <script setup>
-import SideBar from '@/components/layouts/SideBar.vue'
+import Profile from '@/components/ui/Profile.vue'
 </script>

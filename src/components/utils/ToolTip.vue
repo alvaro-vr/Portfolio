@@ -1,7 +1,7 @@
 <template>
   <div class="tooltip h-full">
     <slot></slot>
-    <span class="tooltiptext">{{ name }}</span>
+    <span class="tooltiptext text-xs md:text-xs lg:text-base">{{ name }}</span>
   </div>
 </template>
 

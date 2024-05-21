@@ -1,23 +1,26 @@
 <template>
-  <div class="h-auto w-full p-[5vh]">
+  <div id="profile" class="w-full h-screen flex justify-around items-center flex-wrap gap-8 p-10">
     <img
-      class="w-full h-full rounded-full border-[1vh] border-yellow-200 border-opacity-30"
+      class="md:h-64 lg:h-80 xl:h-3/5 rounded-full border-4 border-neutral-900 border-opacity-30"
       src="../../assets/images/profile.png"
       :alt="data.profile.name"
     />
-    <h1
-      class="text-neutral-700 mt-3 text-4xl font-semibold text-center underline underline-offset-8"
-    >
-      {{ data.profile.name }}
-    </h1>
-  </div>
-  <div class="flex justify-center h-16 [&>*]:mx-6">
-    <ToolTip :name="'GitHub'">
-      <GitHubIcon class="text-neutral-800" :data="data" />
-    </ToolTip>
-    <ToolTip :name="'Linkedin'">
-      <LinkedinIcon class="text-blue-700" :data="data" />
-    </ToolTip>
+    <div>
+      <h1 class="text-neutral-900 mt-3 text-4xl xl:text-6xl font-medium text-center">
+        {{ data.profile.name }}
+      </h1>
+      <h2 class="text-neutral-600 text-xl xl:text-3xl font-medium text-center">
+        {{ data.profile.title }}
+      </h2>
+    </div>
+    <div class="flex flex-wrap h-10 lg:h-12 xl:h-16 [&>*]:mx-6">
+      <ToolTip :name="'GitHub'">
+        <GitHubIcon class="text-neutral-800" :data="data" />
+      </ToolTip>
+      <ToolTip :name="'Linkedin'">
+        <LinkedinIcon class="text-blue-700" :data="data" />
+      </ToolTip>
+    </div>
   </div>
 </template>
 
