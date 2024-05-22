@@ -1,7 +1,7 @@
 <template>
   <footer
     id="footer"
-    class="flex justify-center mt-9 w-full bg-neutral-500 bg-opacity-20 px-10 py-5"
+    class="flex justify-center mt-20 w-full bg-neutral-500 bg-opacity-20 px-10 py-5"
   >
     <p class="text-neutral-900">
       {{ profile.email }} | ©2024 | Made with Vue.js |
