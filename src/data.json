@@ -9,5 +9,17 @@
   "aboutme": {
     "title": "Sobre mi",
     "description": "Soy un desarrollador back-end con nociones en el front-end. Me gusta trabajar en equipo y aprender de mis compañeros de trabajo. Me encanta la tecnología, la programación y la creatividad."
+  },
+  "proyects": {
+    "title": "Proyectos personales",
+    "description": "Estos son algunos de los proyectos que he realizado en los últimos años.",
+    "list": [
+      {
+        "title": "Api REST peliculas | Spring Boot",
+        "description": "Api REST hecha con Spring Boot (WEB, JPA) que muestra una lista de +900 películas.",
+        "image": "src/assets/images/api-rest-peliculas.png",
+        "link": "https://github.com/alvaro-vr/api-rest-peliculas"
+      }
+    ]
   }
 }

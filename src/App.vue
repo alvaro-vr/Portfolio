@@ -4,6 +4,7 @@
     <Separator />
     <AboutMe :aboutme="data.aboutme" />
     <Separator />
+    <Proyects :proyects="data.proyects" />
     <Footer :profile="data.profile" />
   </div>
 </template>
@@ -13,6 +14,7 @@ import Profile from '@/components/general/Profile.vue'
 import Separator from '@/components/general/Separator.vue'
 import AboutMe from '@/components/general/AboutMe.vue'
 import Footer from '@/components/general/Footer.vue'
+import Proyects from '@/components/general/Proyects.vue'
 
 import data from '@/data.json'
 </script>
