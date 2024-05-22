@@ -20,7 +20,6 @@
 <script setup>
 import ToolTip from '@/components/utils/ToolTip.vue'
 import GitHubIcon from '@/components/icons/GitHubIcon.vue'
-
 import { defineProps } from 'vue'
 
 defineProps({

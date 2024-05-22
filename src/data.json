@@ -17,7 +17,7 @@
       {
         "title": "Api REST peliculas | Spring Boot",
         "description": "Api REST hecha con Spring Boot (WEB, JPA) que muestra una lista de +900 películas.",
-        "image": "src/assets/images/api-rest-peliculas.png",
+        "image": "/api-rest-peliculas.png",
         "link": "https://github.com/alvaro-vr/api-rest-peliculas"
       }
     ]
