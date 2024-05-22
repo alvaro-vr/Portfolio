@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white border border-gray-200 rounded-lg shadow-2xl shadow-black">
+  <div class="bg-white border border-gray-200 rounded-lg shadow-2xl shadow-neutral-700">
     <img class="h-60 w-auto rounded-t-lg" :src="proyect.image" :alt="proyect.title" />
     <div class="flex justify-between items-end w-full h-auto px-5 py-3 gap-x-11">
       <div class="flex flex-col">
@@ -10,9 +10,11 @@
           {{ proyect.description }}
         </p>
       </div>
-      <ToolTip class="h-12" :name="'Ver el proyecto'">
-        <GitHubIcon :github="proyect.link" />
-      </ToolTip>
+      <div class="h-12">
+        <ToolTip :name="'Ver el proyecto'">
+          <GitHubIcon :github="proyect.link" />
+        </ToolTip>
+      </div>
     </div>
   </div>
 </template>
