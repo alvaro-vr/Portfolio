@@ -16,3 +16,31 @@ body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 3vh;
 }
+
+@keyframes show {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    scale: 100%;
+  }
+}
+
+#container > * {
+  view-timeline-name: --component;
+  view-timeline-inset: block;
+
+  animation-timeline: --component;
+  animation-name: show;
+
+  animation-range: entry 10% cover 20%;
+  animation-fill-mode: both;
+}
+
+#container > footer {
+  animation: none;
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center max-w-7xl px-10">
+  <div id="container" class="flex flex-col items-center max-w-7xl px-10">
     <Profile :profile="data.profile" />
     <Separator />
     <AboutMe :aboutme="data.aboutme" />

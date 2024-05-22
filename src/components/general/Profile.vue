@@ -2,7 +2,7 @@
   <div id="profile" class="w-full h-[80vh] flex justify-around items-center flex-wrap gap-10">
     <img
       class="md:h-64 lg:h-80 xl:h-3/5 rounded-full border-4 border-neutral-900 border-opacity-30 shadow-black shadow-2xl"
-      src="@/assets/images/profile.png"
+      src="/profile.png"
       :alt="profile.name"
     />
     <div>
