@@ -15,6 +15,12 @@
     "description": "Estos son algunos de los proyectos que he realizado en los últimos años.",
     "list": [
       {
+        "title": "Tabla paginada | React + Spring Boot",
+        "description": "Tabla con paginación, donde el backend da la paginación mediante una API REST y el cliente front maneja los datos.",
+        "image": "/DemoTablaPaginada.png",
+        "link": "https://github.com/alvaro-vr/TablaPaginada-Spring-React"
+      },
+      {
         "title": "Api REST peliculas | Spring Boot",
         "description": "Api REST hecha con Spring Boot (WEB, JPA) que muestra una lista de +900 películas.",
         "image": "/api-rest-peliculas.png",

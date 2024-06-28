@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white border border-gray-200 rounded-lg shadow-2xl shadow-neutral-700">
-    <img class="h-60 w-auto rounded-t-lg" :src="proyect.image" :alt="proyect.title" />
+    <img class="h-60 w-full rounded-t-lg" :src="proyect.image" :alt="proyect.title" />
     <div class="flex justify-between items-end w-full h-auto px-5 py-3 gap-x-11">
       <div class="flex flex-col">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
